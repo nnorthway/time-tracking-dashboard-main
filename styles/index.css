@@ -58,6 +58,9 @@ body main .cards .card .layer .card-header {
   align-items: center;
   margin-bottom: 0.5em;
 }
+body main .cards .card .layer .card-header h2 {
+  font-size: 18px;
+}
 body main .cards .card .layer .title {
   display: flex;
   flex-direction: row;
@@ -93,6 +96,10 @@ body main .cards .card .layer:first-of-type {
 body main .cards .card .layer:nth-of-type(2) {
   padding: 28px 25px;
   margin-bottom: -44px;
+}
+body main .cards .card .layer:nth-of-type(2):hover {
+  background-color: #303782;
+  cursor: pointer;
 }
 @media (min-width: 775px) {
   body main .cards .card#title_card {
@@ -168,6 +175,10 @@ body main .cards .card#title_card .layer:nth-of-type(2) {
   position: relative;
   top: -20px;
   margin-bottom: 0;
+}
+body main .cards .card#title_card .layer:nth-of-type(2):hover {
+  background-color: #1c1f4a;
+  cursor: auto;
 }
 @media (min-width: 775px) {
   body main .cards .card#title_card .layer:nth-of-type(2) .row {
@@ -273,6 +284,10 @@ a:hover, a:focus, a:focus-visible, a.is-active {
   background-size: 1em;
   background-repeat: no-repeat;
   background-position: center;
+}
+.icon.icon-dots:hover {
+  background-image: url('data:image/svg+xml;utf8,<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="%23ffffff" fill-rule="evenodd"/></svg>');
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {

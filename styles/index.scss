@@ -11,6 +11,7 @@ $desatBlue: hsl(235, 45%, 61%);
 $paleBlue: hsl(236, 100%, 87%);
 $text: rgba(#feffff, 1);
 $lightText: #BBC0FF;
+$blueHover: #303782;
 
 body {
   background: $veryDarkBlue;
@@ -58,6 +59,9 @@ body {
             justify-content: space-between;
             align-items: center;
             margin-bottom: .5em;
+            h2 {
+              font-size: 18px;
+            }
           }
           .title {
             display: flex;
@@ -90,6 +94,10 @@ body {
           &:nth-of-type(2) {
             padding: 28px 25px;
             margin-bottom: -44px;
+            &:hover {
+              background-color: $blueHover;
+              cursor: pointer;
+            }
           }
         }
         &#title_card {
@@ -158,6 +166,10 @@ body {
               position: relative;
               top: -20px;
               margin-bottom: 0;
+              &:hover {
+                background-color: $darkBlue;
+                cursor: auto;
+              }
               @media (min-width: 775px) {
                 .row {
                   display: flex;
@@ -263,6 +275,10 @@ a {
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: center;
+    &:hover {
+      background-image: url('data:image/svg+xml;utf8,<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="%23ffffff" fill-rule="evenodd"/></svg>');
+      cursor: pointer;
+    }
   }
 }
 
